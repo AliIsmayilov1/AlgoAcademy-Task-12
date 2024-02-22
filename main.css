@@ -1,0 +1,93 @@
+:root {
+    --cyan: hsl(179, 62%, 43%);
+    --bYellow: hsl(71, 73%, 54%);
+    --lGray: hsl(204, 43%, 93%);
+    --gBlue: hsl(218, 22%, 67%);
+}
+
+body {
+    font-size: 16px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--lGray);
+    font-family: Karla;
+}
+
+div#main {
+    box-shadow: 1px 1px 4px black;
+    width: 590px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas:
+        "T T"
+        "L R"
+    ;
+}
+
+div#top {
+    padding: 32px;
+    grid-area: T;
+    background-color: white;
+    
+}
+
+div#top>h1 {
+    color: var(--cyan);
+    font-weight: 400;
+}
+
+div#top>h1+p {
+    color: var(--bYellow);
+    font-weight: 400;
+}
+
+div#top>p+p {
+    color: var(--gBlue);
+}
+
+
+div#left {
+    grid-area: L;
+    background-color: var(--cyan);
+    padding: 28px;
+    color: var(--lGray);
+}
+
+div#left>p>span {
+    color: var(--lGray);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+div#left>p:first-child+p {
+    font-weight: 100;
+}
+
+div#left>div#button {
+    border-radius: 6px;
+    box-shadow: 1px 1px 3px black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    color: white;
+    background-color: var(--bYellow);
+}
+div#left>div#button > a{
+    text-decoration: none;
+    color: white;
+}
+
+div#right {
+    grid-area: R;
+    background-color: rgb(95, 194, 194);
+    padding: 18px;
+    color:white;
+    font-weight: 400;
+}
+div#right {
+    font-weight: 100;
+}
