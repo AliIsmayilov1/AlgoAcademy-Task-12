@@ -91,3 +91,13 @@ div#right {
 div#right {
     font-weight: 100;
 }
+@media screen and (max-width:375px){
+    div#main{
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "T"
+        "L"
+        "R"
+        ;
+    }
+}
